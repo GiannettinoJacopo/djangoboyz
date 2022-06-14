@@ -20,5 +20,13 @@
 <a href=https://i.pinimg.com/originals/88/1b/52/881b52e643e77f3e487dd63d57451b90.jpg>looser text</A>
 
 <h4>tu-tututututuru-turururu</h4>
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
 </body>
 </html> 
+
